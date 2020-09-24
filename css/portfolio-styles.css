@@ -108,11 +108,11 @@ main {
   margin-right: 93px;
 }
 
-.web-logotext {
+.logo__web-logotext {
   color: #2196f3;
 }
 
-.studio-logotext {
+.logo__studio-logotext {
   color: #000000;
 }
 
@@ -121,21 +121,21 @@ main {
   margin-right: auto;
 }
 
-.site-nav .link {
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav__link {
   padding: 33px 0;
   color: #212121;
   position: relative;
 }
 
-.site-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.site-nav .link.current {
+.site-nav__link.current {
   color: #2196f3;
 }
 
-.site-nav .link.current::after {
+.site-nav__link.current::after {
   position: absolute;
   content: "";
   display: block;
@@ -151,18 +151,18 @@ main {
   letter-spacing: 0.02em;
 }
 
-.mail-tel-nav .item:not(:last-child) {
+.mail-tel-nav__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.mail-tel-nav .icon.mail {
+.mail-tel-nav__icon-mail {
   width: 16px;
   height: 12px;
   fill: #757575;
   margin-right: 10px;
 }
 
-.mail-tel-nav .icon.tel {
+.mail-tel-nav__icon-tel {
   width: 10px;
   height: 16px;
   fill: #757575;
@@ -170,10 +170,10 @@ main {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mail-tel-nav .link:hover .tel,
-.mail-tel-nav .link:focus .tel,
-.mail-tel-nav .link:hover .mail,
-.mail-tel-nav .link:focus .mail {
+.mail-tel-nav__link:hover .mail-tel-nav__icon-tel,
+.mail-tel-nav__link:focus .mail-tel-nav__icon-tel,
+.mail-tel-nav__link:hover .mail-tel-nav__icon-mail,
+.mail-tel-nav__link:focus .mail-tel-nav__icon-mail {
   fill: #2196f3;
 }
 
@@ -313,7 +313,7 @@ main {
   margin-bottom: 20px;
 }
 
-.page-footer .studio-logotext {
+.page-footer .logo__studio-logotext {
   color: #ffffff;
 }
 
