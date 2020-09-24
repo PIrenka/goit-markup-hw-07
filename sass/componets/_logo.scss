@@ -9,11 +9,17 @@
   outline-color: $active-color;
 }
 
-.page-header .logo {
+.header-page .logo {
   // /* стили геометрии (отступов) для логотипа в целом */
   margin-top: 24px;
   margin-bottom: 25px;
   margin-right: 93px;
+}
+
+.page-footer .logo {
+  //   /* отступы для Лого в футере */
+  margin-bottom: 20px;
+  //   /* outline: 6px solid yellow; */
 }
 
 .logo__web-logotext {

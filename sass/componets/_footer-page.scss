@@ -1,4 +1,4 @@
-.page-footer {
+.footer-page {
   //   /* общие стили для подвала сайта */
   background-color: $hero-background-color;
   line-height: 1.71;
@@ -14,13 +14,7 @@
   margin-right: 85px;
 }
 
-.page-footer .logo {
-  //   /* отступы для Лого в футере */
-  margin-bottom: 20px;
-  //   /* outline: 6px solid yellow; */
-}
-
-.page-footer .logo__studio-logotext {
+.footer-page .logo__studio-logotext {
   //   /* стили для части Studio в логотипе в Футере сайта */
   color: $title-color;
 }

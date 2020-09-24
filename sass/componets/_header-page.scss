@@ -1,4 +1,4 @@
-.page-header {
+.header-page {
   //   /* общие стили для всего Хедера */
   position: fixed;
   width: 100%;
@@ -8,7 +8,7 @@
   border-bottom: 1px solid $header-bottom-line;
 }
 
-.page-header .flexbox {
+.header-page .flexbox {
   //   /* выравнивание по центру содержимого хедера */
   align-items: center;
 }

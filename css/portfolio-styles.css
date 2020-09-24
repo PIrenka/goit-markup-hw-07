@@ -80,7 +80,7 @@ main {
   overflow: hidden;
 }
 
-.page-header {
+.header-page {
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -88,7 +88,7 @@ main {
   border-bottom: 1px solid #ececec;
 }
 
-.page-header .flexbox {
+.header-page .flexbox {
   align-items: center;
 }
 
@@ -102,10 +102,14 @@ main {
   outline-color: #2196f3;
 }
 
-.page-header .logo {
+.header-page .logo {
   margin-top: 24px;
   margin-bottom: 25px;
   margin-right: 93px;
+}
+
+.page-footer .logo {
+  margin-bottom: 20px;
 }
 
 .logo__web-logotext {
@@ -294,7 +298,7 @@ main {
   transform: translatey(0);
 }
 
-.page-footer {
+.footer-page {
   background-color: #2f303a;
   line-height: 1.71;
 }
@@ -309,11 +313,7 @@ main {
   margin-right: 85px;
 }
 
-.page-footer .logo {
-  margin-bottom: 20px;
-}
-
-.page-footer .logo__studio-logotext {
+.footer-page .logo__studio-logotext {
   color: #ffffff;
 }
 

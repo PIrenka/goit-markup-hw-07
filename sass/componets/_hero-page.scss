@@ -1,10 +1,10 @@
-.hero {
+.hero-page {
   //   /*  стили для секции Hero, особенно для фона Героя если не подгрузился файл CSS*/
   background: $hero-background-color;
   //   /* outline: 5px solid orange; */
 }
 
-.hero .container-hero {
+.container-hero {
   //   /* стили для контейнера Героя с заголовком и кнопкой */
   //   /* outline: 5px solid yellow; */
   max-width: 1600px;
@@ -20,7 +20,7 @@
   background-size: auto;
 }
 
-.hero .title {
+.hero__title {
   //   /* стили для заголовка сайта в Hero */
   color: $title-color;
   font-weight: 900;
