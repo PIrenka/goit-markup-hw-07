@@ -31,25 +31,25 @@ img {
 }
 
 :root {
-  --title-color: #ffffff;
-  --hero-background-color: #2f303a;
-  --hero-overlay-color: rgba(47, 48, 58, 0.4);
-  --minititles-color: #212121;
-  --inside-color: #757575;
-  --active-color: #2196f3;
-  --logo-studio-color: #000000;
-  --team-container-background: #f5f4fa;
-  --tel-in-footer-color: rgba(255, 255, 255, 0.6);
-  --header-bottom-line: #ececec;
-  --projects-card-border: #eeeeee;
-  --team-social-icons-fill: #afb1b8;
-  --footer-eclipse-social-icons-color: rgba(255, 255, 255, 0.1);
+  $title-color: #ffffff;
+  $hero-background-color: #2f303a;
+  $hero-overlay-color: rgba(47, 48, 58, 0.4);
+  $minititles-color: #212121;
+  $inside-color: #757575;
+  $active-color: #2196f3;
+  $logo-studio-color: #000000;
+  $team-container-background: #f5f4fa;
+  $tel-in-footer-color: rgba(255, 255, 255, 0.6);
+  $header-bottom-line: #ececec;
+  $projects-card-border: #eeeeee;
+  $team-social-icons-fill: #afb1b8;
+  $footer-eclipse-social-icons-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
   font-family: Roboto, sans-serif;
-  color: var(--minititles-color);
-  background-color: var(--title-color);
+  color: $minititles-color;
+  background-color: $title-color;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -87,7 +87,7 @@ main {
 .link {
   /* стили к ссылкам во всем документе*/
   text-decoration: none;
-  color: var(--inside-color);
+  color: $inside-color;
   cursor: pointer;
   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -97,8 +97,8 @@ main {
 .item .link:focus,
 .item .link:active {
   /* возможность выделять другим цветом ссылки при наведении курсора на них */
-  color: var(--active-color);
-  outline-color: var(--active-color);
+  color: $active-color;
+  outline-color: $active-color;
   /* animation: bounce 1s; */ /*это для практики анимации*/
 }
 /* стили для анимации bounce, которая будет применяться при ховере на ссылки */
@@ -137,9 +137,9 @@ main {
   position: fixed;
   width: 100%;
   z-index: 1;
-  background-color: var(--title-color);
+  background-color: $title-color;
   /* нижняя линия внизу хедера */
-  border-bottom: 1px solid var(--header-bottom-line);
+  border-bottom: 1px solid $header-bottom-line;
 }
 
 .page-header .flexbox {
@@ -155,7 +155,7 @@ main {
   line-height: 1.19;
   letter-spacing: 0.03em;
   display: inline-block;
-  outline-color: var(--active-color);
+  outline-color: $active-color;
 }
 
 .page-header .logo {
@@ -167,12 +167,12 @@ main {
 
 .web-logotext {
   /* стили для части Web в логотипе */
-  color: var(--active-color);
+  color: $active-color;
 }
 
 .studio-logotext {
   /* стили для части Studio в логотипе */
-  color: var(--logo-studio-color);
+  color: $logo-studio-color;
 }
 
 .header-nav {
@@ -195,12 +195,12 @@ main {
 
 .site-nav .link {
   /* цвет ссылок в левой навигации хедера */
-  color: var(--minititles-color);
+  color: $minititles-color;
 }
 
 .site-nav .link.current {
   /* выделение ссылки в навигации хедера текуущей страници другим цветом */
-  color: var(--active-color);
+  color: $active-color;
 }
 
 .site-nav .link {
@@ -212,7 +212,7 @@ main {
   position: absolute;
   content: "";
   display: block;
-  background-color: var(--active-color);
+  background-color: $active-color;
   height: 4px;
   width: 100%;
   border-radius: 2px;
@@ -234,7 +234,7 @@ main {
   /* стили для иконки почты, цвет со спрайта-удалён */
   width: 16px;
   height: 12px;
-  fill: var(--inside-color);
+  fill: $inside-color;
   margin-right: 10px;
 }
 
@@ -242,7 +242,7 @@ main {
   /* стили для иконки телефона */
   width: 10px;
   height: 16px;
-  fill: var(--inside-color);
+  fill: $inside-color;
   margin-right: 10px;
   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -252,7 +252,7 @@ main {
 .mail-tel-nav .link:focus .tel,
 .mail-tel-nav .link:hover .mail,
 .mail-tel-nav .link:focus .mail {
-  fill: var(--active-color);
+  fill: $active-color;
 }
 
 /* ======================================================== */
@@ -261,7 +261,7 @@ main {
 
 .hero {
   /*  стили для секции Hero, особенно для фона Героя если не подгрузился файл CSS*/
-  background: var(--hero-background-color);
+  background: $hero-background-color;
   /* outline: 5px solid orange; */
 }
 
@@ -274,10 +274,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(
-      var(--hero-overlay-color),
-      var(--hero-overlay-color)
-    ),
+  background-image: linear-gradient($hero-overlay-color, $hero-overlay-color),
     url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -286,7 +283,7 @@ main {
 
 .hero .title {
   /* стили для заголовка сайта в Hero */
-  color: var(--title-color);
+  color: $title-color;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -300,17 +297,17 @@ main {
 
 .hero .button {
   /* стили для кнопки Заказать Услугу */
-  color: var(--title-color);
+  color: $title-color;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  background-color: var(--active-color);
+  background-color: $active-color;
   letter-spacing: 0.06em;
   /* outline: 2px solid orange; */
 
   padding: 10px 32px;
   border: none;
-  outline-color: var(--active-color);
+  outline-color: $active-color;
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   border-radius: 4px;
   cursor: pointer;
@@ -360,7 +357,7 @@ main {
   min-height: 581px;
   padding: 40px;
 
-  background: var(--title-color);
+  background: $title-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -379,12 +376,12 @@ main {
   position: absolute;
   right: 8px;
   top: 8px;
-  background-color: var(--title-color);
+  background-color: $title-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   padding: 6px;
   cursor: pointer;
-  outline-color: var(--active-color);
+  outline-color: $active-color;
   /* для того, чтоб при нажатии на кнопку не появлялась черная рамка */
 }
 
@@ -392,13 +389,13 @@ main {
   /* иконка крестика для закрытия модального окна */
   width: 18px;
   height: 18px;
-  fill: var(--logo-studio-color);
+  fill: $logo-studio-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-modal:hover .modal-icon,
 .button-modal :focus > .modal-icon {
-  fill: var(--active-color);
+  fill: $active-color;
 }
 
 /* -----------------------FORM----------------------------- */
@@ -414,7 +411,7 @@ main {
 
 .input-container {
   flex-direction: column;
-  color: var(--inside-color);
+  color: $inside-color;
   margin-bottom: 30px;
 }
 
@@ -427,7 +424,7 @@ main {
   width: 100%;
   cursor: pointer;
 
-  color: var(--minititles-color);
+  color: $minititles-color;
   line-height: 2.75;
 
   outline-color: transparent;
@@ -454,7 +451,7 @@ main {
   /* transform: translate(50%, 50%); */
 
   transform: translate(12px, 11px);
-  fill: var(--minititles-color);
+  fill: $minititles-color;
   width: 18px;
   height: 18px;
   cursor: pointer;
@@ -466,8 +463,8 @@ main {
 .modalform-input:focus + .icon {
   /* outline: none; */
 
-  outline-color: var(--active-color);
-  fill: var(--active-color);
+  outline-color: $active-color;
+  fill: $active-color;
 }
 
 .modalform-comment {
@@ -494,7 +491,7 @@ main {
 }
 
 .modalform-comment:focus {
-  border-color: var(--active-color);
+  border-color: $active-color;
 }
 
 /* .modalform-input:valid {
@@ -524,9 +521,9 @@ main {
 }
 
 .label-checkbox .link {
-  color: var(--active-color);
+  color: $active-color;
   text-decoration: underline;
-  outline-color: var(--active-color);
+  outline-color: $active-color;
   margin-left: 4px;
 }
 
@@ -536,19 +533,19 @@ main {
   vertical-align: -11%;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--minititles-color);
+  border: 2px solid $minititles-color;
   border-radius: 2px;
   /* background-image: url(../images/icons/form-check-window.svg); */
   margin-right: 8px;
   cursor: pointer;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* outline-color: var(--active-color); */
+  /* outline-color: $active-color; */
 }
 
 .checkbox:checked ~ .label-checkbox-title::before {
-  border: 2px solid var(--active-color);
+  border: 2px solid $active-color;
   border-radius: 2px;
-  background-color: var(--active-color);
+  background-color: $active-color;
   background-image: url(../images/icons/vector-check.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -565,7 +562,7 @@ main {
   letter-spacing: 0.06em;
   color: #ffffff;
 
-  background-color: var(--active-color);
+  background-color: $active-color;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -573,7 +570,7 @@ main {
   margin: 0px auto;
   cursor: pointer;
 
-  outline-color: var(--active-color);
+  outline-color: $active-color;
 }
 
 /* ======================================================== */
@@ -598,7 +595,7 @@ main {
 
 .features .list .text {
   /* стили для парграфов h3 ОСОБЕННОСТЕЙ */
-  color: var(--inside-color);
+  color: $inside-color;
   font-size: 14px;
   line-height: 1.71;
   padding: 0;
@@ -623,7 +620,7 @@ main {
   content: "";
   display: block;
   height: 120px;
-  background-color: var(--team-container-background);
+  background-color: $team-container-background;
   background-image: url(../images/icons/antenna.svg);
   background-size: 70px;
   background-repeat: no-repeat;
@@ -636,7 +633,7 @@ main {
   content: "";
   display: block;
   height: 120px;
-  background-color: var(--team-container-background);
+  background-color: $team-container-background;
   background-image: url(../images/icons/clock.svg);
   background-size: 70px;
   background-repeat: no-repeat;
@@ -649,7 +646,7 @@ main {
   content: "";
   display: block;
   height: 120px;
-  background-color: var(--team-container-background);
+  background-color: $team-container-background;
   background-image: url(../images/icons/diagram.svg);
   background-size: 70px;
   background-repeat: no-repeat;
@@ -662,7 +659,7 @@ main {
   content: "";
   display: block;
   height: 120px;
-  background-color: var(--team-container-background);
+  background-color: $team-container-background;
   background-image: url(../images/icons/astronaut.svg);
   background-size: 70px;
   background-repeat: no-repeat;
@@ -708,7 +705,7 @@ main {
   background: rgba(47, 48, 58, 0.8);
   height: 70px;
   width: 100%;
-  color: var(--title-color);
+  color: $title-color;
   font-weight: 700;
   line-height: 1.14;
   text-align: center;
@@ -722,7 +719,7 @@ main {
 
 .our-team {
   /* стили для Наша Команда */
-  background: var(--team-container-background);
+  background: $team-container-background;
 }
 
 .our-team .container {
@@ -755,7 +752,7 @@ main {
 
 .list.team .item {
   /* фон карточек команды и cтили для бордера карточки*/
-  background-color: var(--title-color);
+  background-color: $title-color;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -775,7 +772,7 @@ main {
 
 .list.team .item .text {
   /* стили к параграфам списка Нашей Команды  */
-  color: var(--inside-color);
+  color: $inside-color;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -795,7 +792,7 @@ main {
   border-radius: 50%;
   box-shadow: none;
   /* скрыть тени от круглых иконок */
-  background-color: var(--title-color);
+  background-color: $title-color;
   padding: 12px;
   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -814,7 +811,7 @@ main {
   /* background-color: green; */
   width: 20px;
   height: 20px;
-  fill: var(--team-social-icons-fill);
+  fill: $team-social-icons-fill;
   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -828,13 +825,13 @@ main {
 .list.social .link:focus .facebook,
 .list.social .link:focus .linkedin {
   /* цвет иконок соц сетей при ховере */
-  fill: var(--title-color);
+  fill: $title-color;
 }
 
 .list.social .item-social .link:hover,
 .list.social .item-social .link:focus {
   /* цвет подложки-кружочка соц сетей при ховере */
-  background-color: var(--active-color);
+  background-color: $active-color;
 }
 
 /* **************************************************************** */
@@ -858,7 +855,7 @@ main {
 
 .our-clients .item {
   /* стили для выделения области пунктов списка */
-  border: 1px solid var(--team-social-icons-fill);
+  border: 1px solid $team-social-icons-fill;
   box-sizing: border-box;
   border-radius: 4px;
   width: calc((100% - 30px * 5) / 6);
@@ -882,7 +879,7 @@ main {
 .icon.client-5,
 .icon.client-6 {
   /* заливка иконок логотипов, предварительно fill со спрайта удален */
-  fill: var(--team-social-icons-fill);
+  fill: $team-social-icons-fill;
   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* размеры можно задать для каждого, класса. но прописывать в каждой иконке свою ширину и высоту в спрайте НЕ СТОИТ (тогда не убераеться зарезервированое место под иконку - 300*150 !! */
@@ -937,14 +934,14 @@ main {
 .item:focus .client-5,
 .item:focus .client-6 {
   /* заливка иконок логотипов компаний при ховере */
-  fill: var(--active-color);
+  fill: $active-color;
   cursor: pointer;
 }
 
 .our-clients .item:hover,
 .our-clients .item:focus {
   /* заливка прямоугольной рамки вокруг логотипов компаний при ховере */
-  border-color: var(--active-color);
+  border-color: $active-color;
   cursor: pointer;
 }
 
@@ -954,7 +951,7 @@ main {
 
 .page-footer {
   /* общие стили для подвала сайта */
-  background-color: var(--hero-background-color);
+  background-color: $hero-background-color;
   line-height: 1.71;
 }
 
@@ -988,19 +985,19 @@ main {
 
 .page-footer .studio-logotext {
   /* стили для части Studio в логотипе в Футере сайта */
-  color: var(--title-color);
+  color: $title-color;
 }
 
 .address {
   /* стили для почтового адреса в футере */
   font-style: normal;
-  color: var(--title-color);
+  color: $title-color;
   display: block;
 }
 
 .mailtel-in-footer {
   /* стили для номера телефона в футере */
-  color: var(--tel-in-footer-color);
+  color: $tel-in-footer-color;
   margin-top: 9px;
 }
 
@@ -1014,7 +1011,7 @@ main {
 
 .join-to-us .text {
   /* стили для текста-контейнера */
-  color: var(--title-color);
+  color: $title-color;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -1029,7 +1026,7 @@ main {
   border-radius: 50%;
   box-shadow: none;
   /* скрыть тени от круглых иконок */
-  background-color: var(--footer-eclipse-social-icons-color);
+  background-color: $footer-eclipse-social-icons-color;
   padding: 12px;
   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1047,13 +1044,13 @@ main {
   /* размеры и заливка иконок соц сетей */
   width: 20px;
   height: 20px;
-  fill: var(--title-color);
+  fill: $title-color;
 }
 
 .list.footer-social .item-social .link:hover,
 .list.footer-social .item-social .link:focus {
   /* смена заливки кружочка при ховере */
-  background-color: var(--active-color);
+  background-color: $active-color;
 }
 
 .join-to-us {
@@ -1063,7 +1060,7 @@ main {
 /* ---------------------------FORM------------------------- */
 
 .form-container {
-  color: var(--title-color);
+  color: $title-color;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -1093,21 +1090,21 @@ main {
   padding: 15px 16px;
 
   width: 358px;
-  outline-color: var(--active-color);
+  outline-color: $active-color;
 
-  color: var(--title-color);
+  color: $title-color;
 }
 
 .button-footer-submit {
-  background: var(--active-color);
+  background: $active-color;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 28px;
   cursor: pointer;
-  outline-color: var(--active-color);
+  outline-color: $active-color;
 
-  color: var(--title-color);
+  color: $title-color;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -1119,7 +1116,7 @@ main {
 }
 
 /* .button-footer-submit .icon {
-  fill: var(--title-color);
+  fill: $title-color;
   width: 24px;
   height: 24px;
   margin-left: 10px;
@@ -1141,6 +1138,7 @@ main {
 /* =================PORTFOLIO-PAGE-кнопки================== */
 
 .hidden-title {
+ПЕРЕНЕСЛА В ДЖЕНЕРАЛ!
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1151,13 +1149,14 @@ main {
   overflow: hidden;
 }
 
+
 .portfolio-button {
   /* стили для ряда кнопок в Портфолио */
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  background-color: var(--team-container-background);
+  background-color: $team-container-background;
   border: none;
   cursor: pointer;
   padding: 0;
@@ -1171,13 +1170,13 @@ main {
 .portfolio-button:focus,
 .portfolio-button:active {
   /* cтили для кнопок портфолио при ховере (изменение цвета заливки и текста) */
-  background-color: var(--active-color);
-  color: var(--title-color);
-  border-color: var(--active-color);
+  background-color: $active-color;
+  color: $title-color;
+  border-color: $active-color;
   border-radius: 4px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  outline-color: var(--active-color);
+  outline-color: $active-color;
 }
 
 .page-portfolio .list.button {
@@ -1194,7 +1193,7 @@ main {
 
 .page-portfolio .list.button .item {
   /* бордер для кнопок в верхнем ряду страници Портфолио */
-  border-color: solid var(--team-container-background);
+  border-color: solid $team-container-background;
   border-radius: 4px;
   /* border: none; */
 }
@@ -1220,7 +1219,7 @@ main {
   /* стили для параграфов в карточках Проекто */
   font-size: 16px;
   line-height: 1.87;
-  color: var(--inside-color);
+  color: $inside-color;
 }
 
 .under-the-pic {
@@ -1242,8 +1241,8 @@ main {
   /* отступы для карточек справа и снизу для всех в проектах Портфолио */
   margin-right: 30px;
   margin-bottom: 30px;
-  background-color: var(--title-color);
-  border: 1px solid var(--projects-card-border);
+  background-color: $title-color;
+  border: 1px solid $projects-card-border;
   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1279,7 +1278,7 @@ main {
   width: 100%;
   height: 100%;
   background: rgba(33, 150, 243, 0.9);
-  color: var(--title-color);
+  color: $title-color;
   font-size: 18px;
   line-height: 1.56;
   padding: 63px 24px;

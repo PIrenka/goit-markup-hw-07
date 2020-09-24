@@ -1,0 +1,26 @@
+.page-footer {
+  //   /* общие стили для подвала сайта */
+  background-color: $hero-background-color;
+  line-height: 1.71;
+}
+
+.container.footer {
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .list:not(:last-child) {
+  margin-right: 85px;
+}
+
+.page-footer .logo {
+  //   /* отступы для Лого в футере */
+  margin-bottom: 20px;
+  //   /* outline: 6px solid yellow; */
+}
+
+.page-footer .studio-logotext {
+  //   /* стили для части Studio в логотипе в Футере сайта */
+  color: $title-color;
+}

@@ -1,0 +1,44 @@
+.header-nav {
+  //   /* жирность текста в навигации хедера */
+  font-weight: 500;
+  margin-right: auto;
+  //   /* position: relative; */
+}
+
+.site-nav .link {
+  //   /* сделать область наведения больше */
+  //   /* padding: 20px 0; */
+  padding: 33px 0; // /*можно сделать больше паддинг, подгоняя исходя из высоты хедера, и тогда марджин в .link.current::after можно убрать*/
+}
+
+.site-nav .item:not(:last-child) {
+  //   /* отступ справа кроме последнего ли в сайт-нав */
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  //   /* цвет ссылок в левой навигации хедера */
+  color: $minititles-color;
+}
+
+.site-nav .link.current {
+  //   /* выделение ссылки в навигации хедера текуущей страници другим цветом */
+  color: $active-color;
+}
+
+.site-nav .link {
+  position: relative;
+}
+
+.link.current::after {
+  //   /* "подчеркивание" активной страницы в Хедере */
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: $active-color;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  //   /* margin-top: 29px; */
+  bottom: 0;
+}
