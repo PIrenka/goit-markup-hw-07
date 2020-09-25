@@ -108,10 +108,6 @@ main {
   margin-right: 93px;
 }
 
-.page-footer .logo {
-  margin-bottom: 20px;
-}
-
 .logo__web-logotext {
   color: #2196f3;
 }
@@ -303,32 +299,36 @@ main {
   line-height: 1.71;
 }
 
-.container.footer {
+.footer-page__container {
   align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.footer__list:not(:last-child) {
+.footer-page__list-general-contacts {
   margin-right: 85px;
 }
 
-.footer-page .logo__studio-logotext {
+.footer-page__logo {
+  margin-bottom: 20px;
+}
+
+.footer-page__list-general-contacts--logo__studio-logotext {
   color: #ffffff;
 }
 
-.address {
+.footer-page__list-general-contacts--address {
   font-style: normal;
   color: #ffffff;
   display: block;
 }
 
-.footer__mailtel {
+.footer-page__list-general-contacts--mailtel {
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
 }
 
-.join-to-us__text {
+.footer-page__list-item-join-to-us--text {
   color: #ffffff;
   font-weight: 700;
   line-height: 1.14;
@@ -336,11 +336,15 @@ main {
   margin-bottom: 20px;
 }
 
-.footer-social__item:not(:last-child) {
+.footer-page__list-join-to-us {
+  margin-right: 93px;
+}
+
+.footer-page__social-list-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer-social__link {
+.footer-page__social-list-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -350,24 +354,24 @@ main {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social__link:hover, .footer-social__link:focus {
+.footer-page__social-list-link:hover, .footer-page__social-list-link:focus {
   background-color: #2196f3;
 }
 
-.footer-social__icon--instagram, .footer-social__icon--twitter, .footer-social__icon--facebook, .footer-social__icon--linkedin {
+.footer-page__social-list-icon--instagram, .footer-page__social-list-icon--twitter, .footer-page__social-list-icon--facebook, .footer-page__social-list-icon--linkedin {
   width: 20px;
   height: 20px;
   fill: #ffffff;
 }
 
-.footer-form-container {
+.footer-page__form-container {
   color: #ffffff;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-.footer-form-container__text {
+.footer-page__form-container--text {
   margin-bottom: 20px;
 }
 

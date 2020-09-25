@@ -1,4 +1,4 @@
-.join-to-us__text {
+.footer-page__list-item-join-to-us--text {
   //   /* стили для текста-контейнера */
   color: $title-color;
   font-weight: 700;
@@ -8,12 +8,16 @@
   //   /* padding-top: 12px; тут костыль так как ранее задавала падинги для ул в футере:60пх */
 }
 
-.footer-social__item:not(:last-child) {
+.footer-page__list-join-to-us {
+  margin-right: 93px;
+}
+
+.footer-page__social-list-item:not(:last-child) {
   //   /* отступы между кружечками сойсетей */
   margin-right: 10px;
 }
 
-.footer-social__link {
+.footer-page__social-list-link {
   //   /* стили для кружечков под иконками соц сетей */
   width: 44px;
   height: 44px;
@@ -32,7 +36,7 @@
   }
 }
 
-.footer-social__icon {
+.footer-page__social-list-icon {
   &--instagram,
   &--twitter,
   &--facebook,

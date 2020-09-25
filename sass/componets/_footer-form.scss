@@ -1,10 +1,10 @@
-.footer-form-container {
+.footer-page__form-container {
   color: $title-color;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 
-  &__text {
+  &--text {
     margin-bottom: 20px;
   }
 }
