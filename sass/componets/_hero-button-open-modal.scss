@@ -54,7 +54,7 @@
   position: relative;
 }
 
-.button-modal {
+.modal__button {
   //   /* стили для кнопки (крестик в кружочке) закрытия модального окна */
   position: absolute;
   right: 8px;
@@ -68,15 +68,15 @@
   //   /* для того, чтоб при нажатии на кнопку не появлялась черная рамка */
 }
 
-.modal-icon {
+.modal__icon-close {
   //   /* иконка крестика для закрытия модального окна */
   width: 18px;
   height: 18px;
   fill: $logo-studio-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button-modal:hover .modal-icon,
-.button-modal :focus > .modal-icon {
-  fill: $active-color;
+  .modal__button:hover &,
+  .modal__button:focus & {
+    fill: $active-color;
+  }
 }
