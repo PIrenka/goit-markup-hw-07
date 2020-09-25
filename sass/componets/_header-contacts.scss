@@ -26,6 +26,13 @@
   }
 
   &__link {
+    &:hover,
+    &:focus {
+      //   /* возможность выделять другим цветом ссылки при наведении курсора на них */
+      color: $active-color;
+      outline-color: $active-color;
+    }
+
     &:hover .mail-tel-nav__icon-tel,
     &:focus .mail-tel-nav__icon-tel,
     &:hover .mail-tel-nav__icon-mail,

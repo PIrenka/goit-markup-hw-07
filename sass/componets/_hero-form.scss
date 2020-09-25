@@ -100,7 +100,7 @@
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
+  // /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
   border: 0 !important;
@@ -109,14 +109,14 @@
   overflow: hidden;
 }
 
-.modal-form__checkbox {
-  // display: flex;
+.modal-form__checkbox-label {
   justify-content: center;
+  // align-items: center;
   //   /* padding-left: 13px; */ /*это в случаи без display:flex*/
   line-height: 1.71;
 }
 
-.modal-form__checkbox-label-title::before {
+.modal-form__checkbox-label--title::before {
   content: "";
   display: inline-block;
   vertical-align: -11%;

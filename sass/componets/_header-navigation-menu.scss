@@ -16,6 +16,14 @@
   //   /* цвет ссылок в левой навигации хедера */
   color: $minititles-color;
   position: relative;
+
+  &:hover,
+  &:focus,
+  &:active {
+    //   /* возможность выделять другим цветом ссылки при наведении курсора на них */
+    color: $active-color;
+    outline-color: $active-color;
+  }
 }
 
 .site-nav__link.current {
