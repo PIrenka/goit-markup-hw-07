@@ -1,9 +1,9 @@
-.whatwedo .container {
+.whatwedo__container {
   //   /* внутренние отступы для контейнера Чем Мы Занимаемся  */
   padding-bottom: 94px;
 }
 
-.whatwedo .title {
+.whatwedo__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.71;
@@ -11,18 +11,17 @@
   margin-bottom: 50px;
 }
 
-.whatwedo .item {
+.whatwedo__list-item {
   //   /* отведенная ширина под фото из раздела */
   flex-basis: calc ((100 % - 2 * 30 px) / 3);
   position: relative;
   //   /*можно ли применять к ли?*/
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.whatwedo .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.uppertext {
+.whatwedo__list-item--uppertext {
   //   /* стили для полупрозрачного блока с текстом поверх фото */
   position: absolute;
   //   /* display: block; */

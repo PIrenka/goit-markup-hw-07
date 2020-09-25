@@ -516,11 +516,11 @@ main {
   margin-bottom: 30px;
 }
 
-.whatwedo .container {
+.whatwedo__container {
   padding-bottom: 94px;
 }
 
-.whatwedo .title {
+.whatwedo__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.71;
@@ -528,16 +528,16 @@ main {
   margin-bottom: 50px;
 }
 
-.whatwedo .item {
+.whatwedo__list-item {
   flex-basis: calc 0 px/3;
   position: relative;
 }
 
-.whatwedo .item:not(:last-child) {
+.whatwedo__list-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.uppertext {
+.whatwedo__list-item--uppertext {
   position: absolute;
   bottom: 0;
   right: 0;
