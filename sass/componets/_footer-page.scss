@@ -10,7 +10,7 @@
   padding-bottom: 60px;
 }
 
-.footer .list:not(:last-child) {
+.footer__list:not(:last-child) {
   margin-right: 85px;
 }
 
@@ -18,3 +18,7 @@
   //   /* стили для части Studio в логотипе в Футере сайта */
   color: $title-color;
 }
+// .logo__studio-logotext--footer {
+//   //   /* стили для части Studio в логотипе в Футере сайта через модификатор, просто изменить класс в футере для части лого*/
+//   color: $title-color;
+// }

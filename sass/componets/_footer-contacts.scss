@@ -1,9 +1,3 @@
-.footer-contacts {
-  //   /* отступы для первого столбика контактов в футере */
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-right: 82px;
-}
 .address {
   //   /* стили для почтового адреса в футере */
   font-style: normal;
@@ -11,7 +5,7 @@
   display: block;
 }
 
-.mailtel-in-footer {
+.footer__mailtel {
   //   /* стили для номера телефона в футере */
   color: $tel-in-footer-color;
   margin-top: 9px;

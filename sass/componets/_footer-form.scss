@@ -1,23 +1,15 @@
-.form-container {
+.footer-form-container {
   color: $title-color;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+
+  &__text {
+    margin-bottom: 20px;
+  }
 }
 
-.form-container .text {
-  margin-bottom: 20px;
-}
-
-.footer-form-field::placeholder {
-  font-size: 16px;
-  line-height: 1.25;
-  //   /* align-items: center; */
-
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-form-field {
+.footer-form__field {
   background-color: transparent;
   height: 50px;
 
@@ -32,9 +24,17 @@
   outline-color: $active-color;
 
   color: $title-color;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    //   /* align-items: center; */
+
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
-.button-footer-submit {
+.footer-form__button-submit {
   background: $active-color;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -53,15 +53,7 @@
   text-align: center;
   letter-spacing: 0.06em;
 }
-
-// /* .button-footer-submit .icon {
-//   fill: $title-color;
-//   width: 24px;
-//   height: 24px;
-//   margin-left: 10px;
-// } */
-
-.button-footer-submit::after {
+&::after {
   //   /* если не будет анимирована и менять цвет иконка, ее можно через псевдоелемент вставить */
   content: "";
   width: 24px;
@@ -69,3 +61,10 @@
   background-image: url(../images/icons/footer-icon-send.svg);
   margin-left: 10px;
 }
+}
+// /* .footer-form__button-submit .icon {
+//   fill: $title-color;
+//   width: 24px;
+//   height: 24px;
+//   margin-left: 10px;
+// } */
