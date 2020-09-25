@@ -1,11 +1,23 @@
-.link-projects {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.portfolio-page__projects-list {
+  //   /* распределение карточек в ряд, после их стало по три в одном ряду */
+  //   /* flex-wrap: wrap; - это перенесла в начало в класс .flexbox*/
+  padding-bottom: 94px;
 }
-.page-portfolio .projects .title {
+
+.portfolio-page__projects-list-link {
+  color: inherit;
+  //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
+  // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-page__projects-list-item-under-the-pic {
+  //   /* отступы для контейнера текста под картинкой в карточке Проекты */
+  padding: 20px 24px;
+  //   /* text-align: left;
+  //   vertical-align: top; */
+}
+
+.portfolio-page__projects-list-item-title {
   //   /* стили для заголовков в карточках Проектов */
   font-weight: 700;
   font-size: 18px;
@@ -14,27 +26,15 @@
   margin-bottom: 4px;
 }
 
-.page-portfolio .projects .text {
+.portfolio-page__projects-list-item-text {
   //   /* стили для параграфов в карточках Проекто */
   font-size: 16px;
   line-height: 1.87;
   color: $inside-color;
 }
 
-.under-the-pic {
-  //   /* отступы для контейнера текста под картинкой в карточке Проекты */
-  padding: 20px 24px;
-  //   /* text-align: left;
-  //   vertical-align: top; */
-}
-
-.page-portfolio .projects {
-  //   /* распределение карточек в ряд, после их стало по три в одном ряду */
-  //   /* flex-wrap: wrap; - это перенесла в начало в класс .flexbox*/
-  padding-bottom: 94px;
-}
-
-.page-portfolio .projects .item {
+//  ===================================================
+.portfolio-page__projects-list-item {
   //   /* размер ширины под одну карточку */
   flex-basis: calc((100% - 30px * 2) / 3);
   //   /* отступы для карточек справа и снизу для всех в проектах Портфолио */
@@ -44,32 +44,32 @@
   border: 1px solid $projects-card-border;
   //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.page-portfolio .projects .item:nth-child(3n) {
-  //   /* убирает отступы справа у каждой третей карточки */
-  margin-right: 0;
-}
+  &:nth-child(3n) {
+    //   /* убирает отступы справа у каждой третей карточки */
+    margin-right: 0;
+  }
 
-.page-portfolio .projects .item:nth-last-of-type(-n + 3) {
-  //   /* убирает отступы снизу у трёх последних карточек */
-  margin-bottom: 0;
-}
+  &:nth-last-of-type(-n + 3) {
+    //   /* убирает отступы снизу у трёх последних карточек */
+    margin-bottom: 0;
+  }
 
-.page-portfolio .projects .item:hover,
-.page-portfolio .projects .item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
 }
-
-.overlay-container {
+// ==============================================
+.portfolio-page__projects-list-overlay-container {
   //   /* это для контейнера, который содержит фото для которого применяется оверлей с текстом */
   position: relative;
   overflow: hidden;
 }
 
-.projects .text.overlay {
+.portfolio-page__projects-list-overlay-text {
   //   /* стили для оверлея (поверх картинок в Проектах)*/
   position: absolute;
   top: 0;
@@ -85,10 +85,10 @@
   //   /* стиль возможности сделать переходы (А-В-А) при ховере и фокусе (время-250ms, функция распределения времени-cubic-bezier(0.4, 0, 0.2, 1) */
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   //   /* transition: transform 250ms ease; */
-}
 
-.page-portfolio .projects .item:hover .overlay,
-.page-portfolio .projects .item:focus .overlay {
-  //   /* стили для анимации оверлея Проектов при ховере */
-  transform: translatey(0);
+  .portfolio-page__projects-list-item:hover &,
+  .portfolio-page__projects-list-item:focus & {
+    //   /* стили для анимации оверлея Проектов при ховере */
+    transform: translatey(0);
+  }
 }

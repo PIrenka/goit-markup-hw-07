@@ -1,11 +1,11 @@
-.page-portfolio__list-button {
+.portfolio-page__list-button {
   //   /* отступы ряда кнопок от секции Проектов */
   padding-top: 94px;
   margin-bottom: 50px;
   justify-content: center;
 }
 
-.page-portfolio__list-button-item {
+.portfolio-page__list-button-item {
   //   /* бордер для кнопок в верхнем ряду страници Портфолио */
   border-color: solid $team-container-background;
   border-radius: 4px;
@@ -17,7 +17,7 @@
   }
 }
 
-.page-portfolio__button {
+.portfolio-page__button {
   //   /* стили для ряда кнопок в Портфолио */
   font-weight: 500;
   font-size: 16px;
