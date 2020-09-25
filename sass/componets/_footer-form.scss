@@ -52,15 +52,15 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-}
-&::after {
-  //   /* если не будет анимирована и менять цвет иконка, ее можно через псевдоелемент вставить */
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-image: url(../images/icons/footer-icon-send.svg);
-  margin-left: 10px;
-}
+
+  &::after {
+    //   /* если не будет анимирована и менять цвет иконка, ее можно через псевдоелемент вставить */
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icons/footer-icon-send.svg);
+    margin-left: 10px;
+  }
 }
 // /* .footer-form__button-submit .icon {
 //   fill: $title-color;
