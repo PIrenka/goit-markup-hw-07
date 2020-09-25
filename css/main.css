@@ -556,12 +556,12 @@ main {
   background: #f5f4fa;
 }
 
-.our-team .container {
+.our-team__container {
   padding-top: 94px;
   padding-bottom: 9px;
 }
 
-.our-team .container .title {
+.our-team__container--title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -569,23 +569,23 @@ main {
   margin-bottom: 50px;
 }
 
-.list.team {
+.our-team__team-cards-list {
   width: calc((100% - 30 * 3) / 4);
   align-items: center;
   padding-bottom: 94px;
 }
 
-.list.team .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.list.team .item {
+.our-team__team-cards-list-item {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.list.team .item .title {
+.our-team__team-cards-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-team__team-cards-list-item--title {
   padding-top: 30px;
   font-weight: 500;
   font-size: 16px;
@@ -594,7 +594,7 @@ main {
   margin-bottom: 10px;
 }
 
-.list.team .item .text {
+.our-team__team-cards-list-item--text {
   color: #757575;
   font-size: 16px;
   line-height: 1.19;
@@ -602,12 +602,12 @@ main {
   margin-bottom: 16px;
 }
 
-.list.social {
+.our-team__social-list {
   padding-bottom: 30px;
   justify-content: center;
 }
 
-.list.social .item-social .link {
+.our-team__social-list-item-link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -617,34 +617,30 @@ main {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social .item-social:not(:last-child) {
+.our-team__social-list-item-link:hover, .our-team__social-list-item-link:focus {
+  background-color: #2196f3;
+}
+
+.our-team__social-list-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.list.social .icon.instagram,
-.list.social .icon.twitter,
-.list.social .icon.facebook,
-.list.social .icon.linkedin {
+.our-team__social-list-item-icon--instagram, .our-team__social-list-item-icon--twitter, .our-team__social-list-item-icon--facebook, .our-team__social-list-item-icon--linkedin {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list.social .link:hover .instagram,
-.list.social .link:hover .twitter,
-.list.social .link:hover .facebook,
-.list.social .link:hover .linkedin,
-.list.social .link:focus .instagram,
-.list.social .link:focus .twitter,
-.list.social .link:focus .facebook,
-.list.social .link:focus .linkedin {
+.our-team__social-list-item-link:hover .our-team__social-list-item-icon--instagram,
+.our-team__social-list-item-link:hover .our-team__social-list-item-icon--twitter,
+.our-team__social-list-item-link:hover .our-team__social-list-item-icon--facebook,
+.our-team__social-list-item-link:hover .our-team__social-list-item-icon--linkedin,
+.our-team__social-list-item-link:focus .our-team__social-list-item-icon--instagram,
+.our-team__social-list-item-link:focus .our-team__social-list-item-icon--twitter,
+.our-team__social-list-item-link:focus .our-team__social-list-item-icon--facebook,
+.our-team__social-list-item-link:focus .our-team__social-list-item-icon--linkedin {
   fill: #ffffff;
-}
-
-.list.social .item-social .link:hover,
-.list.social .item-social .link:focus {
-  background-color: #2196f3;
 }
 
 .our-clients .container {
