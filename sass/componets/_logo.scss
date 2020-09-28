@@ -7,21 +7,21 @@
   letter-spacing: 0.03em;
   display: inline-block;
   outline-color: $active-color;
-}
 
-.header-page .logo {
-  // /* стили геометрии (отступов) для логотипа в целом */
-  margin-top: 24px;
-  margin-bottom: 25px;
-  margin-right: 93px;
-}
+  // .header-page & {
+  //   // /* стили геометрии (отступов) для логотипа в целом */
+  //   margin-top: 24px;
+  //   margin-bottom: 25px;
+  //   margin-right: 93px;
+  // }
 
-.logo__web-logotext {
-  // /* стили для части Web в логотипе */
-  color: $active-color;
-}
+  &__web-logotext {
+    // /* стили для части Web в логотипе */
+    color: $active-color;
+  }
 
-.logo__studio-logotext {
-  // /* стили для части Studio в логотипе */
-  color: $logo-studio-color;
+  &__studio-logotext {
+    // /* стили для части Studio в логотипе */
+    color: $logo-studio-color;
+  }
 }

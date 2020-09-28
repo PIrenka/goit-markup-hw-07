@@ -6,9 +6,16 @@
   background-color: $title-color;
   //   /* нижняя линия внизу хедера */
   border-bottom: 1px solid $header-bottom-line;
-}
 
-.header-page .flexbox {
-  //   /* выравнивание по центру содержимого хедера */
-  align-items: center;
+  & .flexbox {
+    //   /* выравнивание по центру содержимого хедера */
+    align-items: center;
+  }
+
+  & .logo {
+    // /* стили геометрии (отступов) для логотипа в целом */
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-right: 93px;
+  }
 }
